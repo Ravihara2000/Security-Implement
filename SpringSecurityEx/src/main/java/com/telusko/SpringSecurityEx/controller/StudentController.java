@@ -1,8 +1,8 @@
-package com.telusko.SpringSecurityEx;
+package com.telusko.SpringSecurityEx.controller;
 
+import com.telusko.SpringSecurityEx.model.Student;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

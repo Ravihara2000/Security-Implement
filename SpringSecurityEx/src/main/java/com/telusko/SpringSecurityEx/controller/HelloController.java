@@ -1,4 +1,4 @@
-package com.telusko.SpringSecurityEx;
+package com.telusko.SpringSecurityEx.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
