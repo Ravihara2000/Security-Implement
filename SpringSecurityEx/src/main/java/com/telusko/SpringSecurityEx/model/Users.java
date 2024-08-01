@@ -1,16 +1,20 @@
 package com.telusko.SpringSecurityEx.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.internal.build.AllowNonPortable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "users1")
 public class Users {
     @Id
     private int id;
