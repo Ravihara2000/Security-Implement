@@ -33,7 +33,7 @@ public class UserService{
         Authentication authentication =
                 manager.authenticate(new UsernamePasswordAuthenticationToken(users.getUsername(), users.getPassword()));
         if (((Authentication) authentication).isAuthenticated()) {
-            return jwtService.generateToken();
+            return jwtService.generateToken(users.getUsername());
         }
         return "Login failed";
     }
